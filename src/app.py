@@ -54,29 +54,29 @@ activities = {
     },
     # Artísticas
     "Drama Club": {
-        "description": "Act, direct, and produce school plays and performances",
+        "description": "Act, direct, and produce plays and performances",
         "schedule": "Tuesdays, 4:00 PM - 5:30 PM",
         "max_participants": 20,
-        "participants": ["lara@mergington.edu", "felipe@mergington.edu"]
+        "participants": ["juliana@mergington.edu", "felipe@mergington.edu"]
     },
     "Art Workshop": {
         "description": "Explore painting, drawing, and sculpture techniques",
         "schedule": "Fridays, 2:00 PM - 3:30 PM",
         "max_participants": 16,
-        "participants": ["julia@mergington.edu", "rafael@mergington.edu"]
+        "participants": ["lara@mergington.edu", "rafael@mergington.edu"]
     },
     # Intelectuais
     "Math Olympiad": {
         "description": "Prepare for math competitions and solve challenging problems",
         "schedule": "Thursdays, 3:30 PM - 5:00 PM",
         "max_participants": 10,
-        "participants": ["bruno@mergington.edu", "carla@mergington.edu"]
+        "participants": ["bruno@mergington.edu", "carolina@mergington.edu"]
     },
     "Debate Team": {
         "description": "Develop argumentation skills and compete in debates",
         "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
         "max_participants": 12,
-        "participants": ["paula@mergington.edu", "gustavo@mergington.edu"]
+        "participants": ["isabela@mergington.edu", "gustavo@mergington.edu"]
     }
 }
 
@@ -98,7 +98,7 @@ def signup_for_activity(activity_name: str, email: str):
     if activity_name not in activities:
         raise HTTPException(status_code=404, detail="Activity not found")
 
-    # Get the specificy activity
+    # Get the specific activity
     activity = activities[activity_name]
 
     # Check if student already signed up
