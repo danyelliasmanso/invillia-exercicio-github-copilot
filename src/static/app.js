@@ -19,18 +19,17 @@ document.addEventListener("DOMContentLoaded", () => {
         activityCard.className = "activity-card";
 
         const spotsLeft = details.max_participants - details.participants.length;
+        const totalParticipants = details.participants.length;
 
         // Lista de participantes formatada
-        let participantsHtml = "";
-        if (details.participants.length > 0) {
+        let participantsHtml = `<p><strong>Participants:</strong> None yet</p>`;
+        if (totalParticipants > 0) {
           participantsHtml = `
-            <p><strong>Participants:</strong></p>
+            <p><strong>Participants (${totalParticipants}):</strong></p>
             <ul>
               ${details.participants.map(email => `<li>${email}</li>`).join("")}
             </ul>
           `;
-        } else {
-          participantsHtml = `<p><strong>Participants:</strong> None yet</p>`;
         }
 
         activityCard.innerHTML = `
@@ -38,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${details.description}</p>
           <p><strong>Schedule:</strong> ${details.schedule}</p>
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
+          <p><strong>Enrolled:</strong> ${totalParticipants}/${details.max_participants}</p>
           ${participantsHtml}
         `;
 
