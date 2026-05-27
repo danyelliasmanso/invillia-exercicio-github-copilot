@@ -52,6 +52,18 @@ activities = {
         "max_participants": 15,
         "participants": ["ana@mergington.edu", "carlos@mergington.edu"]
     },
+    "Volleyball Team": {
+        "description": "Develop teamwork and compete in school volleyball matches",
+        "schedule": "Tuesdays and Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 14,
+        "participants": ["mariana@mergington.edu", "pedro@mergington.edu"]
+    },
+    "Swimming Club": {
+        "description": "Train in swimming techniques and prepare for swim meets",
+        "schedule": "Mondays and Wednesdays, 3:30 PM - 5:00 PM",
+        "max_participants": 12,
+        "participants": ["bruna@mergington.edu", "felipe@mergington.edu"]
+    },
     # Artísticas
     "Drama Club": {
         "description": "Act, direct, and produce plays and performances",
@@ -65,6 +77,18 @@ activities = {
         "max_participants": 16,
         "participants": ["lara@mergington.edu", "rafael@mergington.edu"]
     },
+    "Music Ensemble": {
+        "description": "Practice music together and perform in school events",
+        "schedule": "Wednesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 18,
+        "participants": ["sara@mergington.edu", "pedro@mergington.edu"]
+    },
+    "Photography Club": {
+        "description": "Learn photography skills and create multimedia projects",
+        "schedule": "Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 16,
+        "participants": ["nina@mergington.edu", "lucas@mergington.edu"]
+    },
     # Intelectuais
     "Math Olympiad": {
         "description": "Prepare for math competitions and solve challenging problems",
@@ -77,6 +101,18 @@ activities = {
         "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
         "max_participants": 12,
         "participants": ["isabela@mergington.edu", "gustavo@mergington.edu"]
+    },
+    "Science Club": {
+        "description": "Explore science experiments and discuss new discoveries",
+        "schedule": "Fridays, 3:30 PM - 5:00 PM",
+        "max_participants": 14,
+        "participants": ["marina@mergington.edu", "hugo@mergington.edu"]
+    },
+    "Creative Writing": {
+        "description": "Develop storytelling and writing skills with weekly workshops",
+        "schedule": "Tuesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 12,
+        "participants": ["claudia@mergington.edu", "renato@mergington.edu"]
     }
 }
 
